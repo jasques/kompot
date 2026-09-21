@@ -1,0 +1,15 @@
+[Unit]
+Description=Robot head movement
+Wants=network.target nss-lookup.target network-online.target networking.service
+After=mosquitto.service network.target nss-lookup.target network-online.target networking.service
+Requires=network-online.target
+
+[Service]
+Type=simple
+User=pi
+RemainAfterExit=true
+ExecStart=/home/pi/kompot/run_script.sh movement.py
+ExecStop=/bin/kill -s SIGINT -$MAINPID & /bin/kill -s SIGINT -$MAINPID
+
+[Install]
+WantedBy=graphical.target

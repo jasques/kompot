@@ -1,0 +1,11 @@
+settings.py
+__pycache__/
+*.py[cod]
+*.log
+.idea/
+.DS_Store
+venv/
+# never commit credentials-bound or personal files
+porcupine/*.ppn
+porcupine/*.pv
+eagle/*.enroll
