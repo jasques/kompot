@@ -31,7 +31,8 @@ licensed model files taken out (see [What is not included](#what-is-not-included
 
 The 3D-printed body is in `3d model files/`: twelve STL files (head chassis top and
 bottom, LCD face plate, camera bump, body top cover, electronics box, antenna, the
-head-to-body links, servo mount and servo cover).
+head-to-body links, servo mount and servo cover), plus the whole Fusion 360 project
+as `kompot v1.f3z`, so every part can be edited rather than only printed.
 
 ## How it is put together
 
@@ -179,8 +180,6 @@ parks the head before shutdown.
   people. Train and enrol your own (step 3).
 - **The household.** Names of the children and parents were in the system prompt;
   they now come from `FAMILY_DESCRIPTION` and `EAGLE_PROFILES` in `settings.py`.
-- **The Fusion 360 source.** The printable STL files are in `3d model files/`, the
-  editable model is not.
 - **Unused art.** Only the sprites the face actually loads are here; design sources
   and stock images were left out.
 
