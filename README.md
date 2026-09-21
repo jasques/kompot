@@ -1,5 +1,7 @@
 # Kompot v1
 
+![Kompot v1 on the kitchen table](docs/kompot-v1.jpg)
+
 Kompot (also answering to *Ziemniaczek*, "little potato") is a desk robot for two
 children, built in 2024 around a Raspberry Pi 5. It sleeps with its eyes closed,
 wakes on a Polish wake word, lifts its head, wiggles its antenna, works out who is
@@ -26,6 +28,10 @@ licensed model files taken out (see [What is not included](#what-is-not-included
 - VL53L0X time-of-flight distance sensor on I2C (`distance_sensor.py`, optional)
 - Sony DualSense controller over USB or Bluetooth for driving by hand (`ps_remote.py`, optional)
 - An XL4015 buck converter feeding the servos from the main supply
+
+The 3D-printed body is in `3d model files/`: twelve STL files (head chassis top and
+bottom, LCD face plate, camera bump, body top cover, electronics box, antenna, the
+head-to-body links, servo mount and servo cover).
 
 ## How it is put together
 
@@ -173,7 +179,8 @@ parks the head before shutdown.
   people. Train and enrol your own (step 3).
 - **The household.** Names of the children and parents were in the system prompt;
   they now come from `FAMILY_DESCRIPTION` and `EAGLE_PROFILES` in `settings.py`.
-- **CAD.** The Fusion 360 model and the 3D-printed parts are not in this repository.
+- **The Fusion 360 source.** The printable STL files are in `3d model files/`, the
+  editable model is not.
 - **Unused art.** Only the sprites the face actually loads are here; design sources
   and stock images were left out.
 
